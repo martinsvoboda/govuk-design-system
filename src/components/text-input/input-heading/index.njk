@@ -6,7 +6,18 @@ ignore_in_sitemap: true
 
 {% from "input/macro.njk" import govukInput %}
 
-<h2 class="govuk-heading-m">Label as page heading</h2>
+<h2 class="govuk-heading-m">Example of a label as page heading</h2>
+
+{{ govukInput({
+  label: {
+    text: "<h1> label",
+    isPageHeading: true
+  },
+  id: "input",
+  name: "input"
+}) }}
+
+<h2 class="govuk-heading-m govuk-!-padding-top-4">Example of a label as page heading with added styling</h2>
 
 {{ govukInput({
   label: {
@@ -30,7 +41,7 @@ ignore_in_sitemap: true
   name: "input"
 }) }}
 
-<h2 class="govuk-heading-m govuk-!-padding-top-4">Label styled as a heading</h2>
+<h2 class="govuk-heading-m govuk-!-padding-top-4">Labels styled as a headings</h2>
 
 {{ govukInput({
   label: {

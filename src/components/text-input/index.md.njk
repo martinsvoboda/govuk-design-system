@@ -33,9 +33,9 @@ Labels should be aligned above the text input they refer to. They should be shor
 
 ### Label as a page heading
 
-When asking one thing per page you may want your `<label>` to look like a heading. `<label>`’s and `<fieldset>`’s have their own heading classes for this.
+When asking one thing per page you may want your `<label>` to be the page  heading. The Nunjucks macro makes this easy by adding the `<h1>` for you when you set `isPageHeading: true,`.
 
-If you want the `<label>` to be the `<h1>` of the page the Nunjucks macro makes this easier by adding the `<h1>` for you when you set `isPageHeading: true,`.
+If you want to make the `<label>` look like a heading you can also apply label classes to make it larger.
 
 {{ example({group: "components", item: "text-input", frontendComponentName: "input", example: "input-heading", html: true, nunjucks: true, open: false}) }}
 
